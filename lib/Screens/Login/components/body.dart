@@ -28,9 +28,7 @@ class Body extends StatelessWidget {
               hintText: "Your Email",
               onChanged: (value) {},
             ),
-            RoundedPasswordField(
-              onChanged: (value) {},
-            ),
+            RoundedPasswordField(),
             RoundedButton(
               text: "LOGIN",
               press: () {},
