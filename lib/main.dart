@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:xolera/Screens/Login/login_screen.dart';
+import 'package:xolera/Screens/Signup/signup_screen.dart';
 import 'package:xolera/Screens/Welcome/welcome_screen.dart';
 import 'package:xolera/constants.dart';
 
@@ -11,6 +13,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Xolera',
+      routes: {
+        '/login': (context) => LoginScreen(),
+        '/signup': (context) => SignUpScreen(),
+      },
       theme: ThemeData(
         primaryColor: kPrimaryColor,
         scaffoldBackgroundColor: Color(0xFF121212),

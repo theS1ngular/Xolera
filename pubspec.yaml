@@ -12,7 +12,9 @@ dependencies:
 
   cupertino_icons: ^1.0.4
   flutter_svg: ^0.23.0
-
+  http: ^0.13.4
+  flutter_session: ^0.1.1
+  
 dev_dependencies:
   flutter_test:
     sdk: flutter
