@@ -3,7 +3,7 @@ import 'package:flutter_session/flutter_session.dart';
 
 class AuthService {
   final baseUrl = 'https://zolera.herokuapp.com';
-  static final SESSION = FlutterSession();
+  static final session = FlutterSession();
 
   Future<dynamic> register(String email, String password) async {
     try {
@@ -27,15 +27,15 @@ class AuthService {
 
   static setToken(String token, String refreshToken) async {
     _AuthData data = _AuthData(token, refreshToken);
-    return await SESSION.set('tokens', data);
+    return await session.set('tokens', data);
   }
 
   static getToken() async {
-    return await SESSION.get('tokens');
+    return await session.get('tokens');
   }
 
   static removeToken() async {
-    return await SESSION.prefs.clear();
+    return await session.prefs.clear();
   }
 }
 
