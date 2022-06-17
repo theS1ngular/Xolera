@@ -14,7 +14,8 @@ dependencies:
   flutter_svg: ^0.23.0
   http: ^0.13.4
   flutter_session: ^0.1.1
-  shared_preferences: ^2.0.13
+  google_sign_in: ^5.3.3
+  
 
 dev_dependencies:
   flutter_test:
